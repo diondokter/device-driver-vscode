@@ -8,7 +8,7 @@
 		"type": "git",
 		"url": "https://github.com/diondokter/device-driver-vscode"
 	},
-	"publisher": "Dion Dokter",
+	"publisher": "diondokter",
 	"categories": [
 		"Programming Languages"
 	],
@@ -54,7 +54,26 @@
 					"description": "Traces the communication between VS Code and the language server."
 				}
 			}
-		}
+		},
+		"semanticTokenScopes": [
+			{
+				"language": "DDSL",
+				"scopes": {
+					"nodetype": [
+						"keyword"
+					],
+					"access": [
+						"keyword"
+					],
+					"byteorder": [
+						"keyword"
+					],
+					"addressmode": [
+						"keyword"
+					]
+				}
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
