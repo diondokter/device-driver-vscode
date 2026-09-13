@@ -1,4 +1,4 @@
-import { workspace, ExtensionContext, window } from 'vscode';
+import { workspace, ExtensionContext } from 'vscode';
 
 import {
 	Executable,
@@ -33,7 +33,6 @@ export function activate(_context: ExtensionContext) {
 	const clientOptions: LanguageClientOptions = {
 		// Register the server for plain text documents
 		documentSelector: [{ scheme: 'file', language: 'DDSL' }],
-		traceOutputChannel: window.createOutputChannel("Device-driver LSP Trace"),
 	};
 
 	// Create the language client and start the client.
