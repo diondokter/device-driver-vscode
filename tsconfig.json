@@ -1,9 +1,12 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
+		"module": "node16",
 		"target": "ES2024",
 		"lib": [
 			"ES2024"
+		],
+		"types": [
+			"node"
 		],
 		"outDir": "out",
 		"rootDir": "src",
