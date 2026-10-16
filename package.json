@@ -54,6 +54,13 @@
 					]
 				}
 			}
+		],
+		"grammars": [
+			{
+				"language": "DDSL",
+				"scopeName": "source.ddsl",
+				"path": "./ddsl.tmGrammar.json"
+			}
 		]
 	},
 	"scripts": {
