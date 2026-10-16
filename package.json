@@ -48,17 +48,11 @@
 			{
 				"language": "DDSL",
 				"scopes": {
-					"nodetype": [
-						"keyword"
+					"keyword": [
+						"keyword.other"
 					],
-					"access": [
-						"keyword"
-					],
-					"byteorder": [
-						"keyword"
-					],
-					"addressmode": [
-						"keyword"
+					"keyword.expression": [
+						"keyword.control"
 					]
 				}
 			}
