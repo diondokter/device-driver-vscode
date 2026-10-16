@@ -21,16 +21,14 @@
 		"vscode": "^1.100.0"
 	},
 	"main": "./out/extension",
-	"activationEvents": [
-		"onLanguage:DDSL"
-	],
 	"contributes": {
 		"languages": [
 			{
 				"id": "DDSL",
 				"extensions": [
 					".ddsl"
-				]
+				],
+				"configuration": "language-configuration.json"
 			}
 		],
 		"configuration": {
