@@ -47,6 +47,11 @@
           "name": "entity.name.type"
         }
       }
+    },
+    {
+      "match": "[\\w-]+",
+      "name": "entity.name.type",
+      "comment": "Backstop for any missed identifier"
     }
   ],
   "repository": {

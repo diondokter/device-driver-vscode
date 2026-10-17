@@ -27,10 +27,22 @@
         ["\"", "\""],
         ["'", "'"],
     ],
-    "folding": {
-        "markers": {
-            "start": "^\\s*// region:\\b",
-            "end": "^\\s*// endregion\\b"
-        }
-    }
+    "onEnterRules": [
+        {
+            // Extend doc comments on new line
+            "beforeText": "^\\s*\\/{3}.*$",
+            "action": {
+                "appendText": "/// ",
+                "indent": "none"
+            }
+        },
+        {
+            // Extend comments on new line
+            "beforeText": "^\\s*\\/{2}.*$",
+            "action": {
+                "appendText": "// ",
+                "indent": "none"
+            }
+        },
+    ]
 }
