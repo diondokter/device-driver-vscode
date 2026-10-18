@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"module": "node16",
+		"module": "esnext",
 		"target": "ES2024",
 		"lib": [
 			"ES2024"
@@ -10,13 +10,10 @@
 		],
 		"outDir": "out",
 		"rootDir": "src",
-		"sourceMap": true
+		"sourceMap": true,
+    	"skipLibCheck": true,
 	},
 	"include": [
 		"src"
-	],
-	"exclude": [
-		"node_modules",
-		".vscode-test"
 	],
 }
