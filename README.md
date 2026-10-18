@@ -1,6 +1,6 @@
 # Device-driver vscode extension
 
-This extension provides vscode with some of the language semantics for the `device-driver specification langue` (ddsl).
+This extension provides vscode with some of the language semantics for the `device-driver specification language` (ddsl).
 It also runs the `ddc` executable to run the LSP which provides:
 - Inlay hints
 - Goto definition
