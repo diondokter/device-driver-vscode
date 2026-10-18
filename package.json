@@ -71,7 +71,7 @@
 			{
 				"language": "ddsl",
 				"scopeName": "source.ddsl",
-				"path": "./ddsl.tmGrammar.json"
+				"path": "./syntaxes/ddsl.tmGrammar.json"
 			}
 		]
 	},
@@ -81,7 +81,7 @@
 		"watch": "tsc -b -w"
 	},
 	"dependencies": {
-		"vscode-languageclient": "^10.1.1"
+		"vscode-languageclient": "^9.0.1"
 	},
 	"devDependencies": {
 		"@types/node": "^26.6.2",
