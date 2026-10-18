@@ -34,7 +34,11 @@
 				"extensions": [
 					".ddsl"
 				],
-				"configuration": "language-configuration.json"
+				"configuration": "language-configuration.json",
+				"icon": {
+					"light": "ddsl.png",
+					"dark": "ddsl.png"
+				}
 			}
 		],
 		"configuration": {
