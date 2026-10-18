@@ -1,9 +1,11 @@
 {
-	"name": "device-driver-language-server",
-	"description": "Vscode extension for device-driver",
+	"name": "device-driver",
+	"description": "Official vscode extension for device-driver",
 	"author": "Dion Dokter",
 	"license": "MIT",
 	"version": "1.0.0",
+	"icon": "./ddsl.png",
+	"homepage": "device-driver.com",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/diondokter/device-driver-vscode"
@@ -24,7 +26,11 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "DDSL",
+				"id": "ddsl",
+				"aliases": [
+					"ddsl",
+					"DDSL"
+				],
 				"extensions": [
 					".ddsl"
 				],
@@ -32,19 +38,25 @@
 			}
 		],
 		"configuration": {
-			"title": "Device-driver",
+			"title": "device-driver",
 			"properties": {
-				"device-driver-language-server.language-server-binary": {
+				"device-driver.language-server-binary": {
 					"scope": "machine",
 					"type": "string",
 					"description": "Path to the DDC binary",
 					"default": "ddc"
+				},
+				"device-driver.language-server-enabled": {
+					"scope": "machine",
+					"type": "boolean",
+					"description": "Should the LSP be activated?",
+					"default": "true"
 				}
 			}
 		},
 		"semanticTokenScopes": [
 			{
-				"language": "DDSL",
+				"language": "ddsl",
 				"scopes": {
 					"keyword": [
 						"keyword.other"
@@ -57,7 +69,7 @@
 		],
 		"grammars": [
 			{
-				"language": "DDSL",
+				"language": "ddsl",
 				"scopeName": "source.ddsl",
 				"path": "./ddsl.tmGrammar.json"
 			}
@@ -66,19 +78,14 @@
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -b",
-		"watch": "tsc -b -w",
-		"lint": "eslint"
+		"watch": "tsc -b -w"
 	},
 	"dependencies": {
 		"vscode-languageclient": "^10.1.1"
 	},
 	"devDependencies": {
-		"@eslint/js": "^10.0.1",
-		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/node": "^26.6.2",
 		"@types/vscode": "^1.138.0",
-		"eslint": "^10.11.0",
-		"typescript": "^6.0.3",
-		"typescript-eslint": "^8.70.1"
+		"typescript": "^6.0.3"
 	}
 }
