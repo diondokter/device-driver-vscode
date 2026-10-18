@@ -24,3 +24,5 @@ $ vsce package
 $ vsce publish
 # <publisher id>.myExtension published to VS Code Marketplace
 ```
+
+Or instead of using publish, go to https://marketplace.visualstudio.com/manage and do it in the UI
