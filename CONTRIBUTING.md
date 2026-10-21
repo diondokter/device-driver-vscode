@@ -26,3 +26,5 @@ $ vsce publish
 ```
 
 Or instead of using publish, go to https://marketplace.visualstudio.com/manage and do it in the UI
+
+Don't forget to publish on https://open-vsx.org/ so vscodium and other 'free' tools can use it.
