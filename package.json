@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"version": "1.0.0",
 	"icon": "./ddsl.png",
-	"homepage": "device-driver.com",
+	"homepage": "https://device-driver.com",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/diondokter/device-driver-vscode"
