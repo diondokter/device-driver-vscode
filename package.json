@@ -3,7 +3,7 @@
 	"description": "Official vscode extension for device-driver",
 	"author": "Dion Dokter",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icon": "./ddsl.png",
 	"homepage": "https://device-driver.com",
 	"repository": {
